@@ -18,7 +18,7 @@ Simply copy the directory where you want it to live.
 You will need:
 1. Python 3
 2. Linux operating system 
-3. GNU core-utils, including sort and uniq
+3. GNU core-utils, including `sort` and `uniq`
 4. SLURM
 
 ### Tested On
@@ -29,6 +29,9 @@ You will need:
 
 ## Running
 ### Production mode
+Uses sinfo to see what nodes are 'down' and compare to nodes previously in `down_nodes.txt`. 
+Email only sent if there is a difference between `sinfo`'s report of down nodes and 'down_nodes.txt'
+Nodes can change state and be up (i.e. node no longer in `down_nodes.txt`) or nodes can be 'down' (i.e. sinfo reports as down and node is not in `down_nodes.txt`).
 `python check_for_down_nodes.py your.email@address.com`
 
 ### Test mode
