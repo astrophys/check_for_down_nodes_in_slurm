@@ -32,8 +32,12 @@ You will need:
 Uses sinfo to see what nodes are 'down' and compare to nodes previously in `down_nodes.txt`. 
 Email only sent if there is a difference between `sinfo`'s report of down nodes and 'down_nodes.txt'
 Nodes can change state and be up (i.e. node no longer in `down_nodes.txt`) or nodes can be 'down' (i.e. sinfo reports as down and node is not in `down_nodes.txt`).
+
+To Run : 
 `python check_for_down_nodes.py your.email@address.com`
 
 ### Test mode
 Runs a few simple tests (you'll have to check by hand) that verifies the code is working reasonably.  
+
+To Run : 
 `python check_for_down_nodes.py your.email@address.com test`
