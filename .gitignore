@@ -1,0 +1,5 @@
+.*.swp
+down_nodes.txt
+email.txt
+.gitignore 
+check_for_down_nodes_final.py

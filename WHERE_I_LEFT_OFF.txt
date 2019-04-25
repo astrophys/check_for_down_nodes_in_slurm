@@ -1,0 +1,7 @@
+Did:
+
+To Do:
+1. Put write email to separate function.
+2. Check that lists in test pass.
+
+
